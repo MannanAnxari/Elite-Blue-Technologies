@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Perky Parrots",
+        "category": "Web Application Development",
+        "filter": "graphics",
+        "image": "../Assets/1.png",
+        "portfolio_url": "#"
+    },
+    {
+        "id": 2,
+        "title": "Home Supplies",
+        "category": "Web Application Development",
+        "filter": "nft",
+        "image": "../Assets/2.jpg",
+        "portfolio_url": "#"
+    },
+    {
+        "id": 3,
+        "title": "Islam Marriage",
+        "category": "Web Application Development",
+        "filter": "app",
+        "image": "../Assets/3.jpg",
+        "portfolio_url": "#"
+    },
+    {
+        "id": 4,
+        "title": "Oakwood Cemetery",
+        "category": "Web Application Development",
+        "filter": "app",
+        "image": "../Assets/4.jpg",
+        "portfolio_url": "#"
+    },
+    {
+        "id": 5,
+        "title": "Discount Space",
+        "category": "Web Application Development",
+        "filter": "web",
+        "image": "../Assets/5.jpg",
+        "portfolio_url": "https://discounts-space.com/"
+    },
+    {
+        "id": 6,
+        "title": "Speedy Limo",
+        "category": "Web Application Development",
+        "filter": "web",
+        "image": "../Assets/6.jpg",
+        "portfolio_url": "https://www.myspeedylimo.com/"
+    },
+    {
+        "id": 7,
+        "title": "Kangaroo",
+        "category": "Web Application Development",
+        "filter": "nft",
+        "image": "../Assets/7.jpg",
+        "portfolio_url": "#"
+    },
+    {
+        "id": 8,
+        "title": "Titan. York",
+        "category": "Web Application Development",
+        "filter": "graphics",
+        "image": "../Assets/8.jpg",
+        "portfolio_url": "#"
+    },
+    {
+        "id": 9,
+        "title": "OnTheVouch",
+        "category": "Web Application Development",
+        "filter": "nft",
+        "image": "../Assets/9.jpg",
+        "portfolio_url": "https://onthevouch.com/"
+    }
+]
