@@ -4,9 +4,10 @@ import AboutImg from '@/public/Assets/About/home.png';
 import WhoWeAre from '@/public/Assets/About/who-we-are.png';
 import AboutSec from '@/public/Assets/About/sec-2-vector.png';
 import Link from 'next/link';
-import Team from '@/Components/Team/Team';
+
 import Image from 'next/image';
 import Head from 'next/head';
+import Team from '@/Components/Team/team';
 
 const About = ({ title, metaKeywords, metaTitle, metaDescription }) => {
   return (
