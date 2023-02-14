@@ -115,7 +115,7 @@ export async function getStaticProps() {
             title: "Contact - Elite Blue Technologies",
             metaTitle: "Elite Blue Technologies",
             metaKeywords: "",
-            metaDescription: "At Elite Blue Technologies, our focus is on delivering results for our clients. As an expert digital agency, we specialize in building brands and attracting customers, not just making empty promises. Let us help you grow your business through creative and effective digital solutions.",
+            metaDescription: "At Elite Blue Technologies, our focus is on delivering results for our clients. As an expert digital agency, we specialize in building brands and attracting customers, not just making empty promises. Let us help you grow your business through creative and effective digital solutions.",
         },
     }
 }
