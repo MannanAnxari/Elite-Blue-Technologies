@@ -14,7 +14,7 @@ export default function Home() {
                             {/* <video width="100%" height="100%" loop muted autoPlay className='homeVideo' id='bannerVideo'>
                                 <source type="video/mp4" src={'/Assets/bg.mp4'} />
                             </video> */}
-                            <video className='homeVideo' muted id='bannerVideo' autoPlay height={'100%'} width={'100%'} src="/Assets/bg.mp4" controls={false} />
+                            <video className='homeVideo' muted id='bannerVideo' loop autoPlay height={'100%'} width={'100%'} src="/Assets/bg.mp4" controls={false} />
                         </div>
                     </div>
                 </div>

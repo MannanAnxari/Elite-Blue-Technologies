@@ -3535,6 +3535,7 @@ textarea.light {
   transition: all 300ms ease;
   outline: none;
 }
+
 .news-block {
   visibility: visible;
   animation-duration: 1500ms;
@@ -3546,13 +3547,13 @@ textarea.light {
 
 @keyframes fadeInUp {
   0% {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
 
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -3649,6 +3650,44 @@ textarea.light {
   vertical-align: middle;
 }
 
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+
+}
+
+.slider .slick-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(254px *4);
+
+
+}
+
+.slider .slide img {
+  margin: auto;
+}
+
+.slider .slide,
+.slick-slide>div,.slick-slide  {
+  height: 100px;
+  width: 314px !important;
+}
+ 
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-254px * 4));
+  }
+}
+
 .news-block .inner-box:hover .image-box img {
   filter: grayscale(0%);
 }
@@ -3661,6 +3700,7 @@ textarea.light {
 .news-block .lower-box .link-box a:hover {
   background: var(--primary);
 }
+
 input:focus,
 select:focus,
 textarea:focus {

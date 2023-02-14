@@ -12,7 +12,7 @@ function Service({ title, description, image, link }) {
                     <div className="bottom-curve"></div>
                 </div>
                 <div className="col-md-6 col-12 my-auto">
-                    <img src={image} alt="Services" className='ServicesImg' draggable="false" />
+                    <Image src={image} style={{ height: "100%" }} alt="Services" className='ServicesImg' draggable="false" />
                 </div>
                 <div className="col-md-6 col-12 my-auto">
                     <div className='px-md-4 px-0'>
@@ -22,7 +22,7 @@ function Service({ title, description, image, link }) {
                         </p>
                         <div className="link-box">
                             <a href={link}>
-                                <span className=""> <Image  src={AngleRight} alt="Angle" className='w-auto h-100 angle' /></span>
+                                <span className=""> <Image src={AngleRight} alt="Angle" className='w-auto h-100 angle' /></span>
                             </a>
                         </div>
                     </div>

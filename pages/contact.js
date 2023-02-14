@@ -12,7 +12,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 
-export default function Contact({ title }) {
+export default function Contact({ title, metaKeywords, metaTitle, metaDescription }) {
 
     const { asPath } = useRouter();
     console.log(asPath);
@@ -20,10 +20,25 @@ export default function Contact({ title }) {
     return (
         <>
             <Head>
+                <meta name="title" content={`${metaTitle}`} />
+                <meta name="keywords" content={`${metaKeywords}`} />
+                <meta name="description" content={`${metaDescription}`} />
+                <link rel="canonical" href={!(typeof window === 'undefined') && window.location.href} />
+                <meta property="og:site_name" content="Elite Blue Technologies" />
+                <meta property="og:url" content={!(typeof window === 'undefined') && window.location.href} />
+                <meta property="og:title" content={`${metaTitle}`} />
+                <meta property="og:type" content="website" />
+                <meta property="og:description" content={`${metaDescription}`} />
+                <meta property="og:image" content="/favicon.ico" />
+                <meta property="og:image:width" content="512" />
+                <meta property="og:image:height" content="512" />
+                <meta property="og:image:type" content="image/png" />
+                <meta name="twitter:title" content={`${metaTitle}`} />
+                <meta name="twitter:description" content={`${metaDescription}`} />
                 <title>{title}</title>
             </Head>
             {/* <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ transition: { duration: 0.3 }, opacity: 0, x: 100 }}> */}
-                {/* <section className="section contact main__form">
+            {/* <section className="section contact main__form">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4">
@@ -49,46 +64,46 @@ export default function Contact({ title }) {
                 </div>
             </section> */}
 
-                <div className="sec py-5">
-                    <div className="container my-md-5 text-start">
-                        <span className="big-circle"></span>
-                        {/* <Image src={shape} className="square" width={100} height={30} alt="" /> */}
-                        <div className="form row mx-auto">
-                            <div className="contact-info col-12 my-auto">
-                                <h2 className='heading'>Fill out this form to get in touch<span className="dot">.</span></h2>
-                                <p className="para">
-                                    We are eager to be a partner in your digital journey as a digital marketing specialist
-                                </p>
+            <div className="sec py-5">
+                <div className="container my-md-5 text-start">
+                    <span className="big-circle"></span>
+                    {/* <Image src={shape} className="square" width={100} height={30} alt="" /> */}
+                    <div className="form row mx-auto">
+                        <div className="contact-info col-12 my-auto">
+                            <h2 className='heading'>Fill out this form to get in touch<span className="dot">.</span></h2>
+                            <p className="para">
+                                We are eager to be a partner in your digital journey as a digital marketing specialist
+                            </p>
 
-                                <div className="info">
-                                    {/*<div className="information mb-4">*/}
-                                    {/*    <p className='mb-0'><span><b>USA:</b></span><br /> </p>*/}
-                                    {/*</div>*/}
-                                    <div className="information mb-4">
-                                        <Image src={address} className="icon" width={100} height={30} alt="" />
-                                        <p className='mb-0'> Shahrah-e-Faisal Rd. P.E.C.S.H Block 6, Karachi, Pakistan.</p>
-                                    </div>
-                                    <div className="information mb-4">
-                                        <Image src={email} className="icon" width={100} height={30} alt="" />
-                                        <p className='mb-0'>info@eliteblue.net</p>
-                                    </div>
-                                    <div className="information mb-4">
-                                        <Image src={phone} className="icon" width={100} height={30} alt="" />
-                                        <p className='mb-0'>+92 311 809 1779</p>
-                                    </div>
+                            <div className="info">
+                                {/*<div className="information mb-4">*/}
+                                {/*    <p className='mb-0'><span><b>USA:</b></span><br /> </p>*/}
+                                {/*</div>*/}
+                                <div className="information mb-4">
+                                    <Image src={address} className="icon" width={100} height={30} alt="" />
+                                    <p className='mb-0'> Shahrah-e-Faisal Rd. P.E.C.S.H Block 6, Karachi, Pakistan.</p>
+                                </div>
+                                <div className="information mb-4">
+                                    <Image src={email} className="icon" width={100} height={30} alt="" />
+                                    <p className='mb-0'>info@eliteblue.net</p>
+                                </div>
+                                <div className="information mb-4">
+                                    <Image src={phone} className="icon" width={100} height={30} alt="" />
+                                    <p className='mb-0'>+92 311 809 1779</p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div className="contact-form">
-                                <span className="circle one"></span>
-                                <span className="circle two"></span>
+                        <div className="contact-form">
+                            <span className="circle one"></span>
+                            <span className="circle two"></span>
 
-                                <ContactForm />
-                            </div>
+                            <ContactForm />
                         </div>
                     </div>
-
                 </div>
+
+            </div>
             {/* </motion.div> */}
         </>
     )
@@ -96,7 +111,12 @@ export default function Contact({ title }) {
 
 export async function getStaticProps() {
     return {
-        props: { title: `Contact - Elite Blue Technologies` },
+        props: {
+            title: "Contact - Elite Blue Technologies",
+            metaTitle: "Elite Blue Technologies",
+            metaKeywords: "",
+            metaDescription: "At Elite Blue Technologies, our focus is on delivering results for our clients. As an expert digital agency, we specialize in building brands and attracting customers, not just making empty promises. Let us help you grow your business through creative and effective digital solutions.",
+        },
     }
 }
 
@@ -216,3 +236,7 @@ const ContactForm = ({ action, method, formId }) => {
         </form >
     )
 }
+
+
+
+

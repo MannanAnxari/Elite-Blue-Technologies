@@ -8,10 +8,12 @@ import { toast, Toaster } from "react-hot-toast";
 import { useRouter } from 'next/router';
 import Loader from '@/Components/Preloader/Loader';
 import Script from 'next/script';
-import Footer from '@/Components/Footer/Footer'; 
+import Footer from '@/Components/Footer/Footer';
 import Home from '@/Components/Home/Home';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-export default function App({ Component, pageProps }) { 
+export default function App({ Component, pageProps }) {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -50,7 +52,8 @@ export default function App({ Component, pageProps }) {
       <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
       <link href="/css/fontawesome-all.css" rel="stylesheet" />
       <link href="/css/flaticon.css" rel="stylesheet" />
-      <link rel="stylesheet" href="/bs.css" /> 
+      <link rel="stylesheet" href="/bs.css" />
+      <meta name="description" content="Created by Elite Blue Technoligies" />  
     </Head>
     {/* <AppContext.Provider value={values}> */}
     <motion.div className="progress-bar" style={{ scaleX }} />

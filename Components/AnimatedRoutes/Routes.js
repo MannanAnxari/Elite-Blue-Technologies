@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from "react-router-dom";
-import { HomeSections } from '../HomeSections/HomeSections';
+import { HomeSections } from '../../pages/HomeSections/HomeSections';
 import { About } from '../../pages/About';
 import { Contact } from '../../pages/contact';
 import { AnimatePresence } from 'framer-motion';

@@ -8,7 +8,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
-export default function Header  () {
+export default function Header() {
     const [isActive, setActive] = useState(false);
     const { pathname } = useRouter();
 
@@ -54,9 +54,9 @@ export default function Header  () {
                                             <ul>
                                                 <li><Link href="/service/branding-and-designing">Creative Branding &amp; Design</Link></li>
                                                 <li><Link href="/service/web-development">Web Development</Link></li>
+                                                <li><Link href="/service/app-development">Mobile Application Development</Link></li>
                                                 <li><Link href="/service/e-commerce-development">Ecommerce Software Development</Link></li>
                                                 <li><Link href="/service/digital-marketing">Digital Marketing - SEO, PPC, SMM</Link></li>
-                                                <li><Link href="/service/app-development">Mobile Application Development</Link></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -102,9 +102,9 @@ export default function Header  () {
                                     <ul>
                                         <li><Link href="/service/branding-and-designing">Creative Branding &amp; Design</Link></li>
                                         <li><Link href="/service/web-development">Web Development</Link></li>
+                                        <li><Link href="/service/app-development">Mobile Application Development</Link></li>
                                         <li><Link href="/service/e-commerce-development">Ecommerce Software Development</Link></li>
                                         <li><Link href="/service/digital-marketing">Digital Marketing - SEO, PPC, SMM</Link></li>
-                                        <li><Link href="/service/app-development">Mobile Application Development</Link></li>
                                     </ul>
                                 </li>
                                 <li>
