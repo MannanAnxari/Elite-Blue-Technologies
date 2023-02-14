@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://eliteblue.net/
+
+# Sitemaps
+Sitemap: https://eliteblue.net/sitemap.xml
