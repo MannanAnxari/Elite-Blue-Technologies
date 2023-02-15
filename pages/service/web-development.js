@@ -9,6 +9,7 @@ import Contact from '@/pages/contact';
 import Tech from '@/Components/Technologies/tech';
 import Image from 'next/image';
 import Head from 'next/head';
+import Layout from '../Layout';
 
 
 
