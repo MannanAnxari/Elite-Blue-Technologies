@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 import serviceone from "../Assets/graphics.png";
 export const Testimonial = () => {

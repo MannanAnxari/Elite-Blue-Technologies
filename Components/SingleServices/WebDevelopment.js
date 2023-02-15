@@ -11,6 +11,7 @@ import AngleRight from '../Assets/angleRight.png';
 import WhoWeAre from '../Assets/About/who-we-are.png';
 import { ContactForm } from '../Contact/ContactForm';
 import { Contact } from '../../pages/contact';
+import Image from 'next/image';
 
 
 
@@ -147,9 +148,10 @@ export const WebDevelopment = () => {
                                             <p className="para pt-0">
                                                 In our experience, we have developed many eCommerce websites for businesses that have gone up to be major brands online.
                                             </p>
-                                            <div className="link-box"><a href='#'>
-                                                <span className=""> <Image fill={true} className='w-100 h-100 position-relative angle' src={AngleRight} alt="Angle" /></span>
-                                            </a>
+                                            <div className="link-box">
+                                                <a href='#'>
+                                                    <span className=""><Image fill={true} className='w-100 h-100 position-relative angle' src={AngleRight} alt="Angle" /></span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

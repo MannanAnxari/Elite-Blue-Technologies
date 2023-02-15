@@ -2,8 +2,9 @@ import { motion } from 'framer-motion';
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react'
 import { BlogItem } from '@/Components/BlogItem/BlogItem';
+import Layout from '../Layout';
 
-function Blog({ data, title, metaKeywords, metaTitle, metaDescription }) {
+function Blog({ data }) {
 
     const [blog, setBlog] = useState({ data: [] })
     useEffect(() => {
@@ -21,40 +22,23 @@ function Blog({ data, title, metaKeywords, metaTitle, metaDescription }) {
 
     return (
         <>
-            <Head>
-                <meta name="title" content={`${metaTitle}`} />
-                <meta name="keywords" content={`${metaKeywords}`} />
-                <meta name="description" content={`${metaDescription}`} />
-                <link rel="canonical" href={!(typeof window === 'undefined') && window.location.href} />
-                <meta property="og:site_name" content="Elite Blue Technologies" />
-                <meta property="og:url" content={!(typeof window === 'undefined') && window.location.href} />
-                <meta property="og:title" content={`${metaTitle}`} />
-                <meta property="og:type" content="website" />
-                <meta property="og:description" content={`${metaDescription}`} />
-                <meta property="og:image" content="/favicon.ico" />
-                <meta property="og:image:width" content="512" />
-                <meta property="og:image:height" content="512" />
-                <meta property="og:image:type" content="image/png" />
-                <meta name="twitter:title" content={`${metaTitle}`} />
-                <meta name="twitter:description" content={`${metaDescription}`} />
-                <title>{title}</title>
-            </Head>
-            {/* <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ transition: { duration: 0.3 }, opacity: 0, x: 100 }}> */}
-            <div className="sec py-5 blog  ">
-                <div className="container">
-                    {
-                        blog.data ?
-                            <div className="row">
-                                <div className="col-12">
+            <Layout title="Blog - Elite Blue Technologies" metaTitle="Elite Blue Technologies" metaDescription="At Elite Blue Technologies, our focus is on delivering results for our clients. As an expert digital agency, we specialize in building brands and attracting customers, not just making empty promises. Let us help you grow your business through creative and effective digital solutions.">
+                {/* <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ transition: { duration: 0.3 }, opacity: 0, x: 100 }}> */}
+                <div className="sec py-5 blog  ">
+                    <div className="container">
+                        {
+                            blog.data ?
+                                <div className="row">
+                                    <div className="col-12">
 
-                                    <h2 className='heading'>Our Latest Blogs<span className="dot">.</span></h2>
-                                </div>
-                                <div className="col-lg-12 mt-4">
-                                    <div className="row">
-                                        {blog.data.map((item) => {
-                                            return <BlogItem item={item} key={item.id} img={`${blog.media_path}`} />
-                                        })}
-                                        {/* {blog.data.map((item) => {
+                                        <h2 className='heading'>Our Latest Blogs<span className="dot">.</span></h2>
+                                    </div>
+                                    <div className="col-lg-12 mt-4">
+                                        <div className="row">
+                                            {blog.data.map((item) => {
+                                                return <BlogItem item={item} key={item.id} img={`${blog.media_path}`} />
+                                            })}
+                                            {/* {blog.data.map((item) => {
                                                 return <div className="news-block col-lg-4 col-md-6 col-sm-12 fadeInUp" key={item.id}>das
                                                     <div className="inner-box">
                                                         <div className="image-box">
@@ -74,20 +58,21 @@ function Blog({ data, title, metaKeywords, metaTitle, metaDescription }) {
                                                     </div>
                                                 </div>
                                             })} */}
+                                        </div>
+                                    </div>
+                                </div> :
+                                <div className="row">
+                                    <div className="col-12 text-center">
+                                        <div className="spinner-border" role="status">
+                                            <span className="visually-hidden">Loading...</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div> :
-                            <div className="row">
-                                <div className="col-12 text-center">
-                                    <div className="spinner-border" role="status">
-                                        <span className="visually-hidden">Loading...</span>
-                                    </div>
-                                </div>
-                            </div>
-                    }
+                        }
+                    </div>
                 </div>
-            </div>
-            {/* </motion.div> */}
+                {/* </motion.div> */}
+            </Layout>
         </>
     )
 }
@@ -102,10 +87,7 @@ export async function getStaticProps(context) {
     return {
         props: {
             data,
-            title: "Blog - Elite Blue Technologies",
-            metaTitle: "Elite Blue Technologies",
-            metaKeywords: "",
-            metaDescription: "At Elite Blue Technologies, our focus is on delivering results for our clients. As an expert digital agency, we specialize in building brands and attracting customers, not just making empty promises. Let us help you grow your business through creative and effective digital solutions.",
+
         },
     }
 }

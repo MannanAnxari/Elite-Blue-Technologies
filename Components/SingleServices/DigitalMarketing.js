@@ -12,8 +12,8 @@ import Image from 'next/image';
 
 export const DigitalMarketing = () => {
     return (
-        <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ transition: { duration: 0.3 }, opacity: 0, x: 100 }}>
-
+        <>
+            {/* // <motion.div initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} exit={{ transition: { duration: 0.3 }, opacity: 0, x: 100 }}> */}
             <section className="section about-section services-section position-relative overflow-hidden w-100">
                 <div className="container">
                     <div className="circle"></div>
@@ -259,7 +259,8 @@ export const DigitalMarketing = () => {
             <section className="position-relative">
                 <Contact />
             </section>
-        </motion.div>
+            {/* // </motion.div> */}
+        </>
 
     )
 }

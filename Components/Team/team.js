@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import shape1 from '@/public/Assets/team-shape-5.1.png'
 import shape2 from '@/public/Assets/team-shape-5.2.png'
+import Image from 'next/image';
 const Team = ({ team, img }) => {
 
     const [teams, setTeams] = useState([]);

@@ -53,7 +53,8 @@ export default function App({ Component, pageProps }) {
       <link href="/css/fontawesome-all.css" rel="stylesheet" />
       <link href="/css/flaticon.css" rel="stylesheet" />
       <link rel="stylesheet" href="/bs.css" />
-      <meta name="description" content="Created by Elite Blue Technoligies" />  
+      <meta name="description" content="Created by Elite Blue Technoligies" />
+      <meta property="og:image" content="/logo.png" />
     </Head>
     {/* <AppContext.Provider value={values}> */}
     <motion.div className="progress-bar" style={{ scaleX }} />
