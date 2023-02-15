@@ -36,7 +36,7 @@ export const WebDevelopment = () => {
                             </div>
                         </div>
                         <div className="col-lg-6 col-12 banner-img-h">
-                            <img src={serviceone} alt="About" draggable="false" className='aboutimg ' style={{ width: '70%' }} />
+                            <Image fill={true} className='w-100 h-100 position-relative aboutimg' src={serviceone} alt="About" draggable="false" style={{ width: '70%' }} />
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@ export const WebDevelopment = () => {
                                         <div className="bottom-curve"></div>
                                     </div>
                                     <div className="col-12 my-3 mb-5">
-                                        <img src={sr1} alt="Services" className='ServicesImg  ' draggable="false" />
+                                        <Image fill={true} className='w-100 h-100 position-relative ServicesImg' src={sr1} alt="Services" draggable="false" />
                                     </div>
                                     <div className="col-12 my-auto">
                                         <div>
@@ -148,7 +148,7 @@ export const WebDevelopment = () => {
                                                 In our experience, we have developed many eCommerce websites for businesses that have gone up to be major brands online.
                                             </p>
                                             <div className="link-box"><a href='#'>
-                                                <span className=""> <img src={AngleRight} alt="Angle" className='angle' /></span>
+                                                <span className=""> <Image fill={true} className='w-100 h-100 position-relative angle' src={AngleRight} alt="Angle" /></span>
                                             </a>
                                             </div>
                                         </div>
@@ -164,7 +164,7 @@ export const WebDevelopment = () => {
                                         <div className="bottom-curve"></div>
                                     </div>
                                     <div className="col-12 my-3 mb-5">
-                                        <img src={sr2} alt="Services" className='ServicesImg  ' draggable="false" />
+                                        <Image fill={true} className='w-100 h-100 position-relative ServicesImg' src={sr2} alt="Services" draggable="false" />
                                     </div>
                                     <div className="col-12 my-auto">
                                         <div>
@@ -173,7 +173,7 @@ export const WebDevelopment = () => {
                                                 We can develop your very own web portal or marketplace. This way you can help other people earn while earning a lot more yourself.
                                             </p>
                                             <div className="link-box"><a href='#'>
-                                                <span className=""> <img src={AngleRight} alt="Angle" className='angle' /></span>
+                                                <span className=""> <Image fill={true} className='w-100 h-100 position-relative angle' src={AngleRight} alt="Angle" /></span>
                                             </a>
                                             </div>
                                         </div>
@@ -189,7 +189,7 @@ export const WebDevelopment = () => {
                                         <div className="bottom-curve"></div>
                                     </div>
                                     <div className="col-12 my-3 mb-5">
-                                        <img src={sr3} alt="Services" className='ServicesImg  ' draggable="false" />
+                                        <Image fill={true} className='w-100 h-100 position-relative ServicesImg' src={sr3} alt="Services" draggable="false" />
                                     </div>
                                     <div className="col-12 my-auto">
                                         <div>
@@ -198,7 +198,7 @@ export const WebDevelopment = () => {
                                                 If you want to create a tool that can benefit your business or your customers, our custom web development will surely make it possible.
                                             </p>
                                             <div className="link-box"><a href='#'>
-                                                <span className=""> <img src={AngleRight} alt="Angle" className='angle' /></span>
+                                                <span className=""> <Image fill={true} className='w-100 h-100 position-relative angle' src={AngleRight} alt="Angle" /></span>
                                             </a>
                                             </div>
                                         </div>

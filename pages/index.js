@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google' 
+import { Inter } from '@next/font/google'
 import HomeSections from './HomeSections/HomeSections'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,9 +22,9 @@ export default function Home({ metaKeywords, title, metaDescription, metaTitle }
         <meta property="og:title" content={`${metaTitle}`} />
         <meta property="og:type" content="website" />
         <meta property="og:description" content={`${metaDescription}`} />
-        <meta property="og:image" content="/favicon.ico" />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
+        <meta property="og:image" content="/logo.png" />
+        {/* <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" /> */}
         <meta property="og:image:type" content="image/png" />
         <meta name="twitter:title" content={`${metaTitle}`} />
         <meta name="twitter:description" content={`${metaDescription}`} />

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 
 
@@ -29,7 +30,9 @@ export const BlogItem = ({ item, img }) => {
             <div className="news-block col-lg-4 col-md-6 col-sm-12 fadeInUp">
                 <div className="inner-box">
                     <div className="image-box">
-                        <Link href={`/blogs/single-blog/${item.slug}`}><img src={`${img}/${item.image}`} alt={`${item.title}`} /></Link>
+                        <Link href={`/blogs/single-blog/${item.slug}`}><Image src={`${img}/${item.image}`} alt={`${item.title}`} className='w-100 h-100 position-relative' style={{
+
+                        }} fill={true} /></Link>
                     </div>
                     <div className="lower-box">
                         <div className="post-meta">
@@ -40,7 +43,7 @@ export const BlogItem = ({ item, img }) => {
                         </div>
                         <h5 className='heading'><Link href={`/blogs/single-blog/${item.slug}`}>{item.title}</Link></h5>
                         <div className="para" dangerouslySetInnerHTML={{ __html: item.short_description }}></div>
-                        <div className="link-box"><Link className="theme-btn" href={`/blogs/single-blog/${item.slug}`}><span className="flaticon-next-1"></span></Link></div>
+                        <div classNam e="link-box"><Link className="theme-btn" href={`/blogs/single-blog/${item.slug}`}><span className="flaticon-next-1"></span></Link></div>
                     </div>
                 </div>
             </div>

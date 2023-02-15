@@ -17,7 +17,7 @@ export const Testimonial = () => {
                         <div className="carousel-item active gtco-testimonials">
                             <div>
                                 <div className="card text-center">
-                                    <img className="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="" />
+                                    <Image fill={true} className='w-100 h-100 position-relative card-img-top' src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="" />
                                     <div className="card-body">
                                         <h5>Ronne Galle 1<br />
                                             <span> Project Manager </span>
@@ -31,7 +31,7 @@ export const Testimonial = () => {
                         <div className="carousel-item  gtco-testimonials">
                             <div>
                                 <div className="card text-center">
-                                    <img className="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="" />
+                                    <Image fill={true} className='w-100 h-100 position-relative card-img-top' src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="" />
                                     <div className="card-body">
                                         <h5>Ronne Galle 2<br />
                                             <span> Project Manager </span>
@@ -45,7 +45,7 @@ export const Testimonial = () => {
                         <div className="carousel-item  gtco-testimonials">
                             <div>
                                 <div className="card text-center">
-                                    <img className="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="" />
+                                    <Image fill={true} className='w-100 h-100 position-relative card-img-top' src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="" />
                                     <div className="card-body">
                                         <h5>Ronne Galle 3<br />
                                             <span> Project Manager </span>

@@ -35,14 +35,14 @@ const Team = ({ team, img }) => {
                                                 <div className="tpteam mb-30">
 
                                                     <div className="tpteam__shape-1">
-                                                        <img className='shape-1' src={shape1} alt="" />
+                                                        <Image fill={true} className='w-100 h-100 position-relative shape-1' src={shape1} alt="" />
                                                     </div>
                                                     <div className="tpteam__shape-2">
-                                                        <img src={shape2} alt="" />
+                                                        <Image fill={true} className='w-100 h-100 position-relative ' src={shape2} alt="" />
                                                     </div>
 
                                                     <div className="tpteam__thumb">
-                                                        <img className="w-100" src={`${teamsImgPath}/${item.image}`} alt="" />
+                                                        <Image fill={true} className='w-100 h-100 position-relative' src={`${teamsImgPath}/${item.image}`} alt="" />
                                                     </div>
 
                                                     <div className="tpteam__content">

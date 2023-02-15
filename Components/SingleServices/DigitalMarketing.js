@@ -6,6 +6,7 @@ import LetsTalk from '../LetsTalk/LetsTalk';
 import { Tech } from '../Technologies/tech';
 import { ContactForm } from '../Contact/ContactForm';
 import { Contact } from '../../pages/contact';
+import Image from 'next/image';
 
 
 
@@ -27,7 +28,7 @@ export const DigitalMarketing = () => {
                             </div>
                         </div>
                         <div className="col-lg-6 col-12 banner-img-h">
-                            <img src={serviceone} alt="About" draggable="false" className='aboutimg ' style={{ width: '70%' }} />
+                            <Image fill={true} src={serviceone} alt="About" draggable="false" className='aboutimg h-100 position-relative' style={{ width: '70%' }} />
                         </div>
                     </div>
                 </div>
@@ -114,7 +115,7 @@ export const DigitalMarketing = () => {
                             <h1 className='heading heading mb-4'>Unified Marketing Services for <span>Clinical Research Organizations</span></h1>
                         </div>
                         <div className="col-lg-6 col-12 my-auto">
-                            <img src={ourwork} alt="About" draggable="false" className='rounded-3 shadow-lg w-100' />
+                            <Image fill={true} src={ourwork} alt="About" draggable="false" className='rounded-3 shadow-lg w-100 h-100 position-relative' />
                         </div>
                     </div>
                     <div className="row my-2">

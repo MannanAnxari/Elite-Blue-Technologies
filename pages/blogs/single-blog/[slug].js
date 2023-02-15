@@ -51,7 +51,7 @@ export default function SingleBlog({ title, metaKeywords, metaTitle, metaDescrip
                     <div className="container text-start">
                         <div className="row">
                             <div className="col-md-6 my-3">
-                                <img src={`${blog.media_path}/${blog.data.image}`} alt="singleBlog" className='w-100 rounded-4' />
+                                <Image fill={true} className='w-100 h-100 position-relative rounded-4' src={`${blog.media_path}/${blog.data.image}`} alt="singleBlog" />
                             </div>
                             <div className="col-md-6 my-md-auto my-3">
                                 <h6 className="heading mb-3" >

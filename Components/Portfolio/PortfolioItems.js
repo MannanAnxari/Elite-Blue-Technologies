@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 export const PortfolioItems = ({ PortfolioItem, img }) => {
@@ -7,7 +8,7 @@ export const PortfolioItems = ({ PortfolioItem, img }) => {
             {PortfolioItem.map((item) => {
                 return <div className={`gallery-item mix ${item.filter} col-lg-4 col-md-6 col-sm-12`} key={item.id}>
                     <div className="inner-box">
-                        <figure className="image"><img src={`${img}/${item.image}`} alt="" /></figure>
+                        <figure className="image"><Image src={`${img}/${item.image}`} alt="" className='w-100 h-100 position-relative' fill={true} /></figure>
                         <a href={`${img}/${item.image}`} className="lightbox-image overlay-box" target='_blank'></a>
                         <div className="cap-box">
                             <div className="cap-inner">

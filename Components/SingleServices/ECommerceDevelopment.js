@@ -5,6 +5,7 @@ import { Contact } from '../../pages/contact';
 import { ContactForm } from '../Contact/ContactForm';
 import LetsTalk from '../LetsTalk/LetsTalk';
 import { Tech } from '../Technologies/tech';
+import Image from 'next/image';
 
 export const ECommerceDevelopment = () => {
   return (
@@ -24,7 +25,7 @@ export const ECommerceDevelopment = () => {
               </div>
             </div>
             <div className="col-lg-6 col-12 banner-img-h">
-              <img src={serviceone} alt="About" draggable="false" className='aboutimg ' style={{ width: '100%' }} />
+              <Image src={serviceone} fill={true} alt="About" draggable="false" className='aboutimg h-100 position-relative' />
             </div>
           </div>
         </div>

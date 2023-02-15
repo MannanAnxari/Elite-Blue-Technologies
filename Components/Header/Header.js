@@ -83,7 +83,7 @@ export default function Header() {
                 </div>
                 <div className="side-menu__block-inner">
                     <div className="side-menu__top justify-content-end">
-                        <a className="side-menu__toggler side-menu__close-btn" onClick={() => setActive(false)}><img src={Close} alt="" /></a>
+                        <a className="side-menu__toggler side-menu__close-btn" onClick={() => setActive(false)}><Image src={Close} alt="" fill={true} className='w-100 h-100 position-relative' /></a>
                     </div>
 
                     <nav className="mobile-nav__container">

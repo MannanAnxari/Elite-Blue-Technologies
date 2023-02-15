@@ -8,6 +8,7 @@ import c1 from '../Assets/services/servicios-app-1024x751.png';
 import c2 from '../Assets/services/CkP-4uSWgAAa4Cm.png';
 import { ContactForm } from '../Contact/ContactForm';
 import { Contact } from '../../pages/contact';
+import Image from 'next/image';
 
 
 export const AppDevelpment = () => {
@@ -27,7 +28,7 @@ export const AppDevelpment = () => {
                             </div>
                         </div>
                         <div className="col-lg-6 col-12 banner-img-h">
-                            <img src={serviceone} alt="About" draggable="false" className='aboutimg ' style={{ width: '70%' }} />
+                            <Image fill={true} src={serviceone} alt="About" draggable="false" className='aboutimg h-100 position-relative' style={{ width: '70%' }} />
                         </div>
                     </div>
                 </div>
@@ -111,9 +112,8 @@ export const AppDevelpment = () => {
 
                     <div className="row ">
                         <div className="col-lg-6 col-12 my-auto">
-                                <img src={c2} alt="About" draggable="false" className='aboutimg w-100 d-md-block d-none' />
-
-                                                    </div>
+                            <Image src={c2} alt="About" draggable="false" fill={true} className='w-100 h-100 position-relative aboutimg w-100 d-md-block d-none' />
+                        </div>
                         <div className="col-lg-6 col-12  my-auto">
                             <div className="inner">
                                 <div className="head py-2 mb-auto">

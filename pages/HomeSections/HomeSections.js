@@ -173,7 +173,7 @@ export default function HomeSections() {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 shape-circle">
-                                <img src={Circle} alt="Shape" />
+                                <Image fill={true} className='w-100 h-100 position-relative' src={Circle} alt="Shape" />
                             </div>
                             <div className="col-md-10">
                                 <div className="head">
@@ -300,7 +300,7 @@ export default function HomeSections() {
                                 Portfolio.slice(0, 6).map((item) => {
                                     return <div className="gallery-item all web-design col-lg-4 col-md-6 col-sm-12" key={item.id}>
                                         <div className="inner-box">
-                                            <figure className="image"><img src={item.image} alt="" /></figure>
+                                            <figure className="image"> <Image fill={true} className='w-100 h-100 position-relative' src={item.image} alt="" /></figure>
                                             <a href="images/gallery/1.jpg" className="lightbox-image overlay-box" target='_blank'></a>
                                             <div className="cap-box">
                                                 <div className="cap-inner">

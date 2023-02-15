@@ -14,6 +14,7 @@ import g4 from '../Assets/services/Infographics-Design.jpg';
 import g5 from '../Assets/services/Packaging-img.jpg';
 import { ContactForm } from '../Contact/ContactForm';
 import { Contact } from '../../pages/contact';
+import Image from 'next/image';
 
 
 
@@ -90,7 +91,7 @@ export const BrandingNDesign = () => {
                             </div>
                         </div>
                         <div className="col-lg-6 col-12 banner-img-h">
-                            <img src={serviceone} alt="About" draggable="false" className='aboutimg ' style={{ width: '70%' }} />
+                            <Image src={serviceone} alt="About" draggable="false" className='aboutimg h-100 position-relative' style={{ width: '70%' }} fill={true} />
                         </div>
                     </div>
                 </div>
@@ -199,7 +200,7 @@ export const BrandingNDesign = () => {
                             </div>
                         </div>
                         <div className="col-lg-6 col-12 my-auto ">
-                            <img src={g1} alt="About" className='rounded-2 shadow-sm w-100' />
+                            <Image fill={true} src={g1} alt="About" className='rounded-2 shadow-sm w-100 h-100 position-relative' />
                         </div>
                     </div>
                 </div>
@@ -208,7 +209,7 @@ export const BrandingNDesign = () => {
                 <div className="container">
                     <div className="row flex-md-row flex-column-reverse">
                         <div className="col-lg-6 col-12 my-md-auto mb-md-auto mb-4">
-                            <img src={g2} alt="About" className='rounded-2 shadow-sm w-100' />
+                            <Image fill={true} src={g2} alt="About" className='rounded-2 shadow-sm w-100 h-100 position-relative' />
                         </div>
                         <div className="col-lg-6 col-12 my-md-auto mb-md-auto mb-4">
                             {/* <h4 className='heading-sm'>About</h4> */}
@@ -237,7 +238,7 @@ export const BrandingNDesign = () => {
             <section className="section py-md-5 py-2 ">
                 <div className="container">
                     <div className="row">
-                    <div className="col-lg-6 col-12 my-md-auto mb-md-auto mb-4">
+                        <div className="col-lg-6 col-12 my-md-auto mb-md-auto mb-4">
                             {/* <h4 className='heading-sm'>About</h4> */}
                             <h2 className='heading heading my-3'>Business Card Design<span className="dot">.</span></h2>
                             <p className="para">Your business cards are the very first impressions of your business. The card must show off professionalism and creativity. It must be easy to read, unique to be memorable, and yet effective in proving your worth. We will help you make your first impression the best one.</p>
@@ -260,7 +261,7 @@ export const BrandingNDesign = () => {
                         </div>
 
                         <div className="col-lg-6 col-12 my-md-auto mb-md-auto mb-4">
-                            <img src={g3} alt="About" className='rounded-2 shadow-sm w-100' />
+                            <Image fill={true} src={g3} alt="About" className='rounded-2 shadow-sm w-100 h-100 position-relative' />
                         </div>
                     </div>
                 </div>
@@ -269,7 +270,7 @@ export const BrandingNDesign = () => {
                 <div className="container">
                     <div className="row flex-md-row flex-column-reverse">
                         <div className="col-lg-6 col-12 my-md-auto mb-md-auto mb-4">
-                            <img src={g4} alt="About" className='rounded-2 shadow-sm w-100' />
+                            <Image fill={true} src={g4} alt="About" className='rounded-2 shadow-sm w-100 h-100 position-relative' />
                         </div>
                         <div className="col-lg-6 col-12 my-auto">
                             {/* <h4 className='heading-sm'>About</h4> */}
@@ -320,7 +321,7 @@ export const BrandingNDesign = () => {
                             </div>
                         </div>
                         <div className="col-lg-6 col-12 my-auto ">
-                            <img src={g5} alt="About" className='rounded-2 shadow-sm w-100' />
+                            <Image fill={true} src={g5} alt="About" className='rounded-2 shadow-sm w-100 h-100 position-relative' />
                         </div>
                     </div>
                 </div>
