@@ -43,19 +43,7 @@ export default function App({ Component, pageProps }) {
 
 
   return <>
-    <Head>
-      <title>Elite Blue Technologies</title>
-      <meta charSet="utf-8" />
-      <link rel="icon" href="/favicon.ico" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content="Web site created using create-react-app" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-      <link href="/css/fontawesome-all.css" rel="stylesheet" />
-      <link href="/css/flaticon.css" rel="stylesheet" />
-      <link rel="stylesheet" href="/bs.css" />
-      <meta name="description" content="Created by Elite Blue Technoligies" />
-      <meta property="og:image" content="/logo.png" />
-    </Head>
+
     {/* <AppContext.Provider value={values}> */}
     <motion.div className="progress-bar" style={{ scaleX }} />
     <Home />

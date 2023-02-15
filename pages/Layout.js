@@ -7,6 +7,12 @@ const Layout = ({ children, title = "Elite Blue Technologies", metaTitle = "Elit
     return (
         <>
             <Head>
+                <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+                <link href="/css/fontawesome-all.css" rel="stylesheet" />
+                <link href="/css/flaticon.css" rel="stylesheet" />
+                <link rel="stylesheet" href="/bs.css" />
+                <meta name="description" content="Created by Elite Blue Technoligies" />
+                <meta property="og:image" content="/logo.png" />
                 <meta name="description" content="Created by Elite Blue Technoligies" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
