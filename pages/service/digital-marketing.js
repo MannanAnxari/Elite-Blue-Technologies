@@ -5,6 +5,7 @@ import ourwork from "@/public/Assets/services/cro-img.png";
 import Contact from '@/pages/contact';
 import Image from 'next/image';
 import Head from 'next/head';
+import Layout from '../Layout';
 
 
 
